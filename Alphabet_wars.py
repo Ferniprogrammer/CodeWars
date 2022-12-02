@@ -21,4 +21,11 @@ cant_m = text.count("m")
 cant_q = text.count("q")
 cant_d = text.count("d")
 cant_z = text.count("z")
-
+equipo_a = cant_w * w + cant_p * p + cant_b * b + cant_s * s
+equipo_b = cant_m * m + cant_q * q + cant_d * d + cant_z * z
+if equipo_a > equipo_b:
+    print("Gana el equipo a por", equipo_a - equipo_b )
+elif equipo_b > equipo_a:
+    print("Gana el equipo b por", equipo_b - equipo_a )
+else:
+    print("Hubo un empate")
